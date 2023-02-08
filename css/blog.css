@@ -1,7 +1,96 @@
 @import url(style.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
-main #ourblog .grid {}
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --fontsize: 1em;
+    --anchomaximo: 1100px;
+}
+
+main #ourblog .gri {
+    /*display: flex;
+    flex-wrap: wrap;*/
+    /* gap: var(--margingrid);*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+main #ourblog .gri article {
+    width: calc(100% - var(--margingrid));
+    position: relative;
+
+}
+
+main #ourblog .gri h3 {
+    font-size: 130%;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-top: 1.2em;
+}
+
+main #ourblog .gri h4 {
+    margin: var(--margingrid) 0;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+main #ourblog .gri p {
+    color: #777;
+    line-height: 1.25em;
+    margin-bottom: 0.65em;
+}
+
+main #ourblog .gri div :not(a) {
+    padding-left: 5%;
+}
+
+main #ourblog .gri a {
+    display: block;
+    margin: var(--margingrid)0;
+}
+
+main #ourblog .fecha {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60px;
+    max-height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    padding: 1em;
+    background-color: var(--colorprincipal);
+    background-blend-mode: darken;
+}
+
+
+main #ourblog .fecha p {
+    color: white;
+    font-weight: 700;
+    margin-top: 0.5em;
+}
+
+
+
+/*mediaqueries*/
+/*600px*/
+@media (min-width: 37.500em) {
+    main #ourblog .gri {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+
+}
