@@ -9,3 +9,98 @@
     --fontsize: 1em;
     --anchomaximo: 1100px;
 }
+
+
+main section#ourMenu {
+    background-color: var(--colorsecundario);
+    /*Pendiente de cambiar el color*/
+}
+
+main #ourMenu h2 {
+    color: white;
+}
+
+main #ourMenu ul {
+    width: 100%;
+    margin: 2em 0;
+
+}
+
+
+
+main #ourMenu ul a {
+    display: block;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    transition: 0.5s;
+
+}
+
+main #ourMenu ul a:hover {
+    background-color: var(--colorprincipal);
+    border-radius: 0.5em;
+}
+
+main #ourMenu ul .active {
+    background-color: var(--colorprincipal);
+    border-radius: 0.5em;
+}
+
+main #ourMenu .topic {
+    color: var(--colorprincipal);
+}
+
+main #ourMenu div h3 {
+    color: white;
+    font-size: 120%;
+}
+
+main #ourMenu div h3 {
+    color: white;
+    font-size: 120%;
+    font-weight: 700;
+}
+
+main #ourMenu .underline2 {
+    width: 4em;
+    color: var(--colorprincipal);
+    margin-bottom: var(--margingrid);
+}
+
+main #ourMenu .underline2 hr {
+    border-color: var(--colorprincipal);
+    width: 100%;
+
+}
+
+main #ourMenu div p {
+    color: whitesmoke;
+    line-height: 1.25em;
+    margin: var(--margingrid)0;
+}
+
+main #ourMenu .flex {
+    display: flex;
+    flex-direction: column;
+
+}
+
+main #ourMenu .flex {
+    display: flex;
+    flex-direction: column;
+}
+
+main #ourMenu .flex article {
+    margin: var(--margingrid);
+}
+
+main #ourMenu .flex article h3 {
+    margin-top: var(--margingrid);
+}
+
+main #ourMenu .flex span {
+    color: var(--colorprincipal);
+    padding: 0em 1.5em;
+}
