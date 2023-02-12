@@ -1,5 +1,6 @@
 @import url(style.css);
 
+/*
 :root {
     --fuenteprincipal: 'Montserrat', sans-serif;
     --fuentetitulos: 'Handlee', cursive;
@@ -9,11 +10,10 @@
     --fontsize: 1em;
     --anchomaximo: 1100px;
 }
-
-
+*/
+/*inicio menu*/
 main section#ourMenu {
     background-color: var(--colorsecundario);
-    /*Pendiente de cambiar el color*/
 }
 
 main #ourMenu h2 {
@@ -25,8 +25,6 @@ main #ourMenu ul {
     margin: 2em 0;
 
 }
-
-
 
 main #ourMenu ul a {
     display: block;
@@ -75,32 +73,56 @@ main #ourMenu .underline2 hr {
 
 }
 
+main #ourMenu .column2 article {
+    margin: var(--margingrid);
+}
+
+main #ourMenu .column2 article h3 {
+    margin-top: var(--margingrid);
+}
+
 main #ourMenu div p {
     color: whitesmoke;
     line-height: 1.25em;
     margin: var(--margingrid)0;
 }
 
-main #ourMenu .flex {
-    display: flex;
-    flex-direction: column;
-
-}
-
-main #ourMenu .flex {
-    display: flex;
-    flex-direction: column;
-}
-
-main #ourMenu .flex article {
-    margin: var(--margingrid);
-}
-
-main #ourMenu .flex article h3 {
-    margin-top: var(--margingrid);
-}
-
-main #ourMenu .flex span {
+main #ourMenu .column2 span {
     color: var(--colorprincipal);
     padding: 0em 1.5em;
+
+}
+
+
+/*mediaqueries*/
+/*600px*/
+@media (min-width: 37.500em) {
+
+
+
+    main #ourMenu .column2 article {
+        display: flex;
+        gap: 1.5em;
+    }
+
+    main #ourMenu figure {
+        max-width: 10.625em;
+        padding: var(--margingrid)0;
+
+    }
+
+    main #ourMenu .flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2em;
+    }
+
+    main #ourMenu .flex .column {
+        width: calc(30% - 1.2em);
+
+    }
+
+    main #ourMenu .column2 {
+        width: 70%;
+    }
 }

@@ -1,10 +1,7 @@
 @import url(style.css);
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-
+/*
 :root {
     --fuenteprincipal: 'Montserrat', sans-serif;
     --fuentetitulos: 'Handlee', cursive;
@@ -15,10 +12,10 @@
     --anchomaximo: 1100px;
 }
 
+*/
+
 main #ourblog .gri {
-    /*display: flex;
-    flex-wrap: wrap;*/
-    /* gap: var(--margingrid);*/
+
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -82,7 +79,7 @@ main #ourblog .fecha p {
 
 }
 
-
+/*final blog*/
 
 /*mediaqueries*/
 /*600px*/
