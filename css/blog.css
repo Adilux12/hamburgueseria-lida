@@ -1,10 +1,7 @@
 @import url(style.css);
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-
+/*
 :root {
     --fuenteprincipal: 'Montserrat', sans-serif;
     --fuentetitulos: 'Handlee', cursive;
@@ -15,17 +12,17 @@
     --anchomaximo: 1100px;
 }
 
+*/
+
 main #ourblog .gri {
-    /*display: flex;
-    flex-wrap: wrap;*/
-    /* gap: var(--margingrid);*/
+
     display: grid;
     grid-template-columns: 1fr 1fr;
 
 }
 
 main #ourblog .gri article {
-    width: calc(100% - var(--margingrid));
+    margin: var(--margingrid);
     position: relative;
 
 }
@@ -63,15 +60,15 @@ main #ourblog .fecha {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 50px;
+    max-height: 50px;
     position: absolute;
     top: 0px;
     left: 0px;
     text-align: center;
     padding: 1em;
     background-color: var(--colorprincipal);
-    background-blend-mode: darken;
+    opacity: 0.8;
 }
 
 
@@ -79,15 +76,23 @@ main #ourblog .fecha p {
     color: white;
     font-weight: 700;
     margin-top: 0.5em;
+
 }
 
-
+/*final blog*/
 
 /*mediaqueries*/
 /*600px*/
 @media (min-width: 37.500em) {
     main #ourblog .gri {
         grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    main #ourblog .fecha {
+
+        max-width: 60px;
+        max-height: 60px;
 
     }
 
